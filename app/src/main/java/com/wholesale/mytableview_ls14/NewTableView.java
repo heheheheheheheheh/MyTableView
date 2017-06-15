@@ -426,6 +426,7 @@ public class NewTableView extends ViewGroup {
             view.layout(0, top, getFirstWidth(), bottom);
             top = bottom;
         }
+        layoutfirst();
         invalidate();
     }
 
@@ -560,7 +561,7 @@ public class NewTableView extends ViewGroup {
             view = adapter.getColumnView(num, reclyView, this);
             view.measure(MeasureSpec.makeMeasureSpec(getFirstWidth(), MeasureSpec.EXACTLY), MeasureSpec.makeMeasureSpec(height, MeasureSpec.EXACTLY));
         }
-        addView(view, getChildCount() - 1);
+        addView(view);
         return view;
     }
 
