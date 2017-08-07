@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //test
+        //test
         setContentView(R.layout.activity_main);
         NewTableView tv = (NewTableView) findViewById(R.id.tv);
         tv.setAdapter(new MyAdapter(MainActivity.this));
